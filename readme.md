@@ -5,3 +5,4 @@ _GamingAnywhere是一个开源的实现云游戏的引擎，并且高效、跨�
 官方链接：https://gaminganywhere.org/index.html  
 github链接：https://github.com/chunying/gaminganywhere  
 ###  一  运行原理
+![image](https://github.com/maolala233/learning_note/blob/main/image/image%201.jpg)
