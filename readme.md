@@ -105,3 +105,4 @@ cd gaminganywhere-0.8.0-bin.win32\gaminganywhere-0.8.0\bin
 输入开启云端连接```ga-client.exe config\client.abs.conf rtsp://192.168.158.131:8000/desktop```  
 云游戏连接成功，效果如下图所示  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/image11.png)  
+## moonlight云游戏  
