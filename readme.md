@@ -48,3 +48,60 @@ ls
 文本中的内容为：```/home/myk/gaminganywhere-master/deps.posix/lib```   
 编辑完成保存退出即可,完成之后一定要再运行```ldconfig```使得该目录下的库重新被导入系统变量，云游戏服务端已经搭建完毕。  
 ###  三  windows环境配置
+* Windows云游戏客户端下载地址：https://gaminganywhere.org/download.html  
+选择gaminganywhere-0.8.0-bin.win32.zip (released on 2015-01-29)下载到windows中解压即可  
+###  四  启动云游戏  
+* 准备一款Linux游戏并启动  
+linux终端运行
+```
+sudo apt-get install supertux
+supertux2
+```  
+如果无法下载则可点击界面右上角设置更换镜像源为清华镜像源：  
+![image](https://github.com/maolala233/learning_note/blob/main/image/image%207.jpg)  
+**切记！启动之后不要关闭游戏窗口**  
+* 编辑配置文件，开启GamingAnywhere服务端  
+在GamingAnywhere的路径中，有一个文件夹：~/gaminganywhere-master/bin/conf/，这个文件夹针对每一款云游戏进行了一定的配置。  
+在该文件夹下新建配置文件命名为server.supertux2.linux.conf，并在里面添加内容，首先编辑文件在其中添加如下代码：  
+```
+# configuration for the openttd game
+# work with ga-server-periodic
+
+[video]
+video-fps = 50
+
+[core]
+include = common/server-common.conf
+include = common/controller.conf
+include = common/video-x264.conf
+include = common/video-x264-param.conf
+include = common/audio-lame.conf
+
+[ga-server-periodic]
+
+display = :0
+find-window-name = supertux2 v0.4.0
+
+enable-audio = true
+```  
+其中``` find-window-name``` 项值为当前游戏右上角的窗口名，从该配置中我们可以看出gaminganywhere主要通过窗口抓取方式实现视频流传输：  
+![image](https://github.com/maolala233/learning_note/blob/main/image/image%208.jpg)  
+* 编辑完成后保存，随后进入bin目录：**gaminganywhere-master/bin**
+* 运行云游戏服务端：```./ga-server-periodic config/server.supertux2.linux.conf```  
+运行成功，云游戏的Server端将不断刷新如下图：
+![image](https://github.com/maolala233/learning_note/blob/main/image/image9.png)  
+* 开启客户端连接  
+在Windows记住刚才解压的二进制版GamingAnywhere的路径，例如我的地址为```D:\gaminganywhere-0.8.0-bin.win32\gaminganywhere-0.8.0\bin```  
+Win + R键打开cmd，输入如下，进入GamingAnywhere客户端目录：
+```
+d:
+cd gaminganywhere-0.8.0-bin.win32\gaminganywhere-0.8.0\bin
+```  
+由于需要使用Server端的IP地址作为启动客户端的参数，因此在Ubuntu中输入ifconfig，查看IP地址:  
+![image](https://github.com/maolala233/learning_note/blob/main/image/image10.png)  
+我的服务器端的IP地址为:192.168.158.131  
+在windows命令提示栏中输入命令格式如下：ga-client {config} rtsp://server-address:server-port/desktop  
+其中```server-address:server-port```为IP地址和端口  
+输入开启云端连接```ga-client.exe config\client.abs.conf rtsp://192.168.158.131:8000/desktop```  
+云游戏连接成功，效果如下图所示  
+![image](https://github.com/maolala233/learning_note/blob/main/image/image10.png)  
