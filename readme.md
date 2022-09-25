@@ -1,5 +1,5 @@
 # 云渲染学习笔记
-## Gaming Anywhere云游戏
+## ● Gaming Anywhere云游戏
 _GamingAnywhere是一个开源的实现云游戏的引擎，并且高效、跨平台、易扩展、可调配。_  
   
 官方链接：https://gaminganywhere.org/index.html  
@@ -105,4 +105,4 @@ cd gaminganywhere-0.8.0-bin.win32\gaminganywhere-0.8.0\bin
 输入开启云端连接```ga-client.exe config\client.abs.conf rtsp://192.168.158.131:8000/desktop```  
 云游戏连接成功，效果如下图所示  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/image11.png)  
-## moonlight云游戏  
+## ● moonlight云游戏  
