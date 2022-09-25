@@ -123,4 +123,23 @@ github链接：https://github.com/moonlight-stream
 * 连接成功：  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%204.jpg)   
 _上述云游戏的操作方式都是通过桌面抓取的传输方式进行云渲染，以下是我们对于unity和unreal开发引擎中的云渲染插件进行的尝试_
-## ● unity云渲染  
+## ● unity render streaming  
+###  一  系统结构  
+渲染流式处理系统由以下 3 个组件组成。
+* 信令服务器
+* 端 1（发送方）
+* 端 2（接收方）  
+在渲染流式处理中，在两个端之间创建一个 P2P 网络，该网络发送视频/音频/二进制数据。Web 服务器支持两个端之间的通信，如下图所示： 
+![image](https://github.com/maolala233/learning_note/blob/main/image/unity%201.png)  
+###  二  生成工程 
+* 选择菜单栏中的“窗口>程序包管理器  
+![image](https://github.com/maolala233/learning_note/blob/main/image/unity%202.png)  
+* 检查“程序包管理器”窗口，单击按钮并选择 。+Add package from git URL...  
+![image](https://github.com/maolala233/learning_note/blob/main/image/unity%203.png)  
+输入```com.unity.renderstreaming@3.1.0-exp.3```并确定  
+* 添加完成  
+![image](https://github.com/maolala233/learning_note/blob/main/image/unity%204.png)  
+* 下载网络应用程序  
+单击 Unity 编辑器上的“编辑>渲染流式处理>下载 Web 应用程序菜单项以下载应用程序:  
+
+下载完成后，打开一个或窗口，并使用选项运行。
