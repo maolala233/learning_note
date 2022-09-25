@@ -118,7 +118,9 @@ github链接：https://github.com/moonlight-stream
 * 移动端下载好moonlight并启动，下载地址：https://github.com/moonlight-stream/moonlight-android/releases  
 * 查看电脑所连wifi的IP地址：  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%201.png)   
-* 在移动端添加输入ip地址即可连接：  
-![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%203.jpg)   
+###  三  启动云游戏  
+* 在移动端添加输入ip地址即可连接
 * 连接成功：  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%204.jpg)   
+_上述云游戏的操作方式都是通过桌面抓取的传输方式进行云渲染，以下是我们对于unity和unreal开发引擎中的云渲染插件进行的尝试_
+## ● unity云渲染  
