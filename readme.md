@@ -106,3 +106,19 @@ cd gaminganywhere-0.8.0-bin.win32\gaminganywhere-0.8.0\bin
 云游戏连接成功，效果如下图所示  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/image11.png)  
 ## ● moonlight云游戏  
+github链接：https://github.com/moonlight-stream  
+###  一  运行原理  
+* 通过游戏串流的方式以视频的方式发送到其他设备。
+* 缺点：1.基于英伟达的技术实现,所以作为运行游戏的服务器,必须使用的是英伟达显卡  
+2.打开客户端游戏需手动点击进入
+###  二  环境配置  
+* 将移动端和服务端放置于同一网络环境下  
+* 打开英伟达显卡驱动并启动显卡提供的串流服务：  
+![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%202.png)  
+* 移动端下载好moonlight并启动，下载地址：https://github.com/moonlight-stream/moonlight-android/releases  
+* 查看电脑所连wifi的IP地址：  
+![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%201.png)   
+* 在移动端添加输入ip地址即可连接：  
+![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%203.jpg)   
+* 连接成功：  
+![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%204.jpg)   
