@@ -162,3 +162,10 @@ _上述云游戏的操作方式都是通过桌面抓取的传输方式进行云�
 具体可参考官方详细文档：https://docs.unity3d.com/Packages/com.unity.renderstreaming@3.1/manual/launch-webapp.html  
 将移动端和电脑端置于同一网络环境下，并连接到对应的ip和端口，最终运行结果如下所示： 
 ![image](https://github.com/maolala233/learning_note/blob/main/image/unity%206.jpg)  
+## ● unity render streaming + webXR  unity render streaming + webXRwebXR syst
+在渲染流式处理中，我们发现unity的render streaming需要输入系统进行配合，而通过unity系统本身自带的input system并不是特别方便，因此我们从git上找到一种unity render streaming + webXR的方法，用webXR来替代input system来监听用户的输入流。
+github链接：https://github.com/FusedVR/VRStreaming  
+通过官方给的样例运行结果如下：  
+![image](https://github.com/maolala233/learning_note/blob/main/image/fuse%201.png)  
+* **存在问题**：因为我们使用的是pico头显，而本样例支持的头显设备中并不包含pico，因此在设备流式传输过程中存在一些问题，不过经过测试是可以在pico中进入VR模式的。
+* _**后续还需继续进行探索调试。**_
