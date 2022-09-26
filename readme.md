@@ -9,7 +9,8 @@ github链接：https://github.com/chunying/gaminganywhere
 Gaming Anywhere在体系结构中定义了两种类型的网络流：**数据流** 和 **控制流**。  
 数据流用于将音频和视频帧从服务器流到客户端，而控制流则以相反的方向运行，用于将用户的操作从客户端发送到服务器。  
 ###  二  Linux环境配置
-* **虚拟机: VMware 16 Pro(Ubuntu16.0.4)** 相关镜像可自行从网上下载  **推荐设置：**硬盘20G；内存：1G；网络：桥接
+* **虚拟机: VMware 16 Pro(Ubuntu16.0.4)** 相关镜像可自行从网上下载  
+**推荐设置：** 硬盘20G；内存：1G；网络：桥接
 * 从官网 (https://github.com/chunying/gaminganywhere) 下载源代码（gaminganywhere-master.zip格式）并通过 VMware tools将文件拖入Home文件夹并解压（可以通过右键解压也可通过终端运行**unzip gaminganywhere-master.zip**解压）
 * 解压缩后，进入目录并使用ls命令，目录结构如图所示：
 ![image](https://github.com/maolala233/learning_note/blob/main/image/image2.png)  
