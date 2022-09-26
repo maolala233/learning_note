@@ -135,7 +135,7 @@ _上述云游戏的操作方式都是通过桌面抓取的传输方式进行云�
 ![image](https://github.com/maolala233/learning_note/blob/main/image/unreal3.jpg)  
 * 2 - 安装node.js  https://nodejs.org/en/download/
 ###  三  云渲染  
-具体可参考官方详细文档：https://docs.unity3d.com/Packages/com.unity.renderstreaming@3.1/manual/installation.html  
+具体可参考官方详细文档：https://docs.unrealengine.com/4.27/zh-CN/SharingAndReleasing/PixelStreaming/PixelStreamingIntro/  
 将移动端和电脑端置于同一网络环境下，并连接到对应的ip和端口，最终运行结果如下所示：  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/unreal4.jpg) 
 
@@ -157,5 +157,8 @@ _上述云游戏的操作方式都是通过桌面抓取的传输方式进行云�
 ![image](https://github.com/maolala233/learning_note/blob/main/image/unity%204.png)  
 * 下载网络应用程序  
 单击 Unity 编辑器上的“编辑>渲染流式处理>下载 Web 应用程序菜单项以下载应用程序:  
-
-下载完成后，打开一个或窗口，并使用选项运行。
+![image](https://github.com/maolala233/learning_note/blob/main/image/unity%205.png)  
+###  三  云渲染  
+具体可参考官方详细文档：https://docs.unity3d.com/Packages/com.unity.renderstreaming@3.1/manual/launch-webapp.html  
+将移动端和电脑端置于同一网络环境下，并连接到对应的ip和端口，最终运行结果如下所示： 
+![image](https://github.com/maolala233/learning_note/blob/main/image/unity%206.jpg)  
