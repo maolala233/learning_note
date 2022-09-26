@@ -123,6 +123,15 @@ github链接：https://github.com/moonlight-stream
 * 连接成功：  
 ![image](https://github.com/maolala233/learning_note/blob/main/image/moonlight%204.jpg)   
 _上述云游戏的操作方式都是通过桌面抓取的传输方式进行云渲染，以下是我们对于unity和unreal开发引擎中的云渲染插件进行的尝试_
+## ● unreal pixel streaming  
+###  一  系统结构  
+虚幻引擎将使用该电脑可用的资源（CPU、GPU、内存等）来运行游戏逻辑并渲染每一帧。它会不断将此渲染输出编码到一个媒体流送中，再通过一个轻量级的网页服务堆栈进行传递。用户即可在其他电脑和移动设备上运行的标准网页浏览器中查看直播流送。  
+![image](https://github.com/maolala233/learning_note/blob/main/image/unreal%201.jpg)  
+![image](https://github.com/maolala233/learning_note/blob/main/image/unreal%202.jpg)  
+###  二  生成工程 
+
+
+
 ## ● unity render streaming  
 ###  一  系统结构  
 渲染流式处理系统由以下 3 个组件组成。
